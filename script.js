@@ -30,19 +30,16 @@ function isElementInView(element) {
 window.addEventListener('scroll', animateOnScroll);
 
 function stopLoader() {
-  const preloader = document.getElementById('preloader');
-  const snake = document.getElementById('snake');
-
-  preloader.classList.add('hide-preloader');
-  snake.classList.remove('animate-snake');
+  setTimeout(function() {
+    var preloader = document.getElementById("preloader");
+    var snake = document.getElementById("snake");
+    preloader.classList.add("hide-preloader");
+    snake.style.animation = "none";
+    snake.style.display = "none";
+  }, 1500);
 }
 
-setTimeout(function() {
-  stopLoader();
-}, 2000);
-
-
-
+window.addEventListener("load", stopLoader);
 
 
 

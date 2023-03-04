@@ -32,10 +32,10 @@ window.addEventListener('scroll', animateOnScroll);
 function stopLoader() {
   // hide the #preloader element
   document.querySelector('#preloader').classList.add('hide-preloader');
-  // hide the #preloader:before element
-  document.querySelector('#preloader:before').classList.add('hide-preloader');
+  // hide the #snake element
+  document.querySelector('#snake').classList.add('hide-preloader');
+  // stop the snake animation
+  document.querySelector('#snake').style.animation = 'none';
 }
 
-// stop the preloader after 1.5 seconds
-setTimeout(stopLoader, 1500);
 

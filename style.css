@@ -112,4 +112,10 @@ footer {
   border: 5px solid #000;
   border-right-color: transparent;
   animation: spin 4s linear infinite;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.hide-preloader:before {
+  opacity: 0;
 }

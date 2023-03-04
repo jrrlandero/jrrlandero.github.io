@@ -30,15 +30,12 @@ function isElementInView(element) {
 window.addEventListener('scroll', animateOnScroll);
 
 function stopLoader() {
-  // hide the #preloader and #snake elements after 2 seconds
-  setTimeout(function() {
-    document.querySelector('#preloader').classList.add('hide-preloader');
-    document.querySelector('#snake').classList.add('hide-preloader');
-  }, 2000);
+  // hide the #preloader element
+  document.querySelector('#preloader').classList.add('hide-preloader');
+  // hide the #preloader:before element
+  document.querySelector('#preloader:before').classList.add('hide-preloader');
 }
 
-
-
-
-
+// stop the preloader after 1.5 seconds
+setTimeout(stopLoader, 1500);
 

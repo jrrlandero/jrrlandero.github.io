@@ -69,7 +69,19 @@ footer {
   left: 50%;
   margin-top: -25px;
   margin-left: -25px;
-  z-index: 10000;
+  opacity: 1;
+  visibility: visible;
+}
+
+.animate {
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.hide-preloader {
+  opacity: 0;
+  visibility: hidden;
 }
 
 @keyframes spin {
@@ -94,15 +106,5 @@ footer {
   border: 5px solid #000;
   border-right-color: transparent;
   animation: spin 4s linear infinite;
-  z-index: 10000;
 }
 
-.hide-preloader {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  pointer-events: none;
-}
-
-.hide-preloader:before {
-  display: none;
-}

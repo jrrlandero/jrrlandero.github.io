@@ -47,12 +47,6 @@ footer {
   text-align: center;
 }
 
-.animate {
-  opacity: 0;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
 #preloader {
   position: fixed;
   top: 0;

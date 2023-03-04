@@ -63,6 +63,21 @@ footer {
   z-index: 9999;
 }
 
+#preloader:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  border-radius: 50%;
+  border: 5px solid #000;
+  border-right-color: transparent;
+  animation: spin 4s linear infinite;
+}
+
 #snake {
   width: 50px;
   height: 50px;
@@ -78,44 +93,5 @@ footer {
 }
 
 .hide-preloader #preloader {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s, visibility 0.5s;
-}
-
-.hide-preloader #snake {
-  animation: none;
-  transition: opacity 0.5s, visibility 0.5s;
-  opacity: 0;
-  visibility: hidden;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-#preloader:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  margin-top: -50px;
-  margin-left: -50px;
-  border-radius: 50%;
-  border: 5px solid #000;
-  border-right-color: transparent;
-  animation: spin 4s linear infinite;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
-}
-
-.hide-preloader:before {
-  opacity: 0;
+  display: none;
 }

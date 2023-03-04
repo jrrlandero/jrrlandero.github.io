@@ -30,16 +30,13 @@ function isElementInView(element) {
 window.addEventListener('scroll', animateOnScroll);
 
 function stopLoader() {
+  // hide the #preloader and #snake elements after 2 seconds
   setTimeout(function() {
-    var preloader = document.getElementById("preloader");
-    var snake = document.getElementById("snake");
-    preloader.classList.add("hide-preloader");
-    snake.style.animation = "none";
-    snake.style.display = "none";
-  }, 1500);
+    document.querySelector('#preloader').classList.add('hide-preloader');
+    document.querySelector('#snake').classList.add('hide-preloader');
+  }, 2000);
 }
 
-window.addEventListener("load", stopLoader);
 
 
 

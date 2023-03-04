@@ -29,22 +29,17 @@ function isElementInView(element) {
 
 window.addEventListener('scroll', animateOnScroll);
 
-
 function stopLoader() {
   const preloader = document.getElementById('preloader');
   const snake = document.getElementById('snake');
-  const preloaderBefore = document.getElementById('preloader').before;
 
   preloader.classList.add('hide-preloader');
   snake.classList.remove('animate-snake');
-  preloaderBefore.classList.add('hide-preloader');
 }
 
-window.addEventListener("load", function() {
-  setTimeout(stopLoader, 2000);
-});
-
-
+setTimeout(function() {
+  stopLoader();
+}, 2000);
 
 
 

@@ -38,10 +38,6 @@ function stopLoader() {
   snake.classList.remove('animate-snake');
   preloader.style.display = 'none';
   
-   // hide the preloader:before pseudo-element after 2 seconds
-  setTimeout(() => {
-    preloaderBefore.style.display = 'none';
-  }, 2000);
 }
 
 

@@ -37,5 +37,15 @@ window.addEventListener('load', function() {
   snake.classList.remove('animate-snake');
 });
 
+function stopLoader() {
+  const preloader = document.getElementById('preloader');
+  const snake = document.getElementById('snake');
+
+  preloader.classList.add('hide-preloader');
+  snake.classList.remove('animate-snake');
+  snake.style.animation = 'none';
+}
+
+
 
 

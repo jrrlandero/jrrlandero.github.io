@@ -107,4 +107,65 @@ footer {
   }
 }
 
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 9999;
+}
+
+#loader {
+  width: 60px;
+  height: 20px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#loader:before,
+#loader:after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  animation: infinite 2s linear;
+}
+
+#loader:before {
+  border-top: 5px solid #3498db;
+  border-bottom: 5px solid #3498db;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  left: -10px;
+}
+
+#loader:after {
+  border-top: 5px solid #3498db;
+  border-bottom: 5px solid #3498db;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  right: -10px;
+  animation-delay: 1s;
+}
+
+@keyframes infinite {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 

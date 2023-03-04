@@ -13,7 +13,7 @@ navLinks.forEach(link => {
 
 
 window.addEventListener('load', function() {
-  const preloader = document.querySelector('#preloader');
+  const preloader = document.querySelector('preloader');
   preloader.classList.add('hide-preloader');
 });
 

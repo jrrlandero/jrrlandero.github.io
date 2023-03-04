@@ -11,3 +11,26 @@ navLinks.forEach(link => {
   });
 });
 
+var animateElements = document.querySelectorAll('.animate');
+
+function animateOnScroll() {
+  animateElements.forEach((element) => {
+    if (isElementInView(element)) {
+      element.classList.add('animate__animated', 'animate__fadeInUp');
+    }
+  });
+}
+
+function isElementInView(element) {
+  var rect = element.getBoundingClientRect();
+  var windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+  return (rect.top <= windowHeight && rect.bottom >= 0);
+}
+
+window.addEventListener('scroll', animateOnScroll);
+
+window.addEventListener('load', function() {
+  document.getElementById('loading').style.display = 'none';
+});
+
+

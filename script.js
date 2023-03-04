@@ -43,9 +43,7 @@ function stopLoader() {
   }, 2000);
 }
 
-window.addEventListener("load", function() {
-  stopLoader();
-});
+
 
 
 

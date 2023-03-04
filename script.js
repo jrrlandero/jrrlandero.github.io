@@ -29,10 +29,11 @@ function isElementInView(element) {
 
 window.addEventListener('scroll', animateOnScroll);
 
-window.addEventListener('load', function() {
-  const preloader = document.querySelector('#preloader');
-  preloader.classList.add('hide-preloader');
+window.addEventListener("load", function() {
+  var preloader = document.getElementById("preloader");
+  preloader.style.display = "none";
 });
+
 
 
 

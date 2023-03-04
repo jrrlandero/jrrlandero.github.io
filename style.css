@@ -90,8 +90,22 @@ footer {
   left: 50%;
   margin-top: -25px;
   margin-left: -25px;
+  z-index: 9998;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .hide-preloader #preloader {
+  display: none;
+}
+
+.hide-preloader #snake {
   display: none;
 }

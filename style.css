@@ -69,19 +69,6 @@ footer {
   left: 50%;
   margin-top: -25px;
   margin-left: -25px;
-  opacity: 1;
-  visibility: visible;
-}
-
-.animate {
-  opacity: 0;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-.hide-preloader {
-  opacity: 0;
-  visibility: hidden;
 }
 
 @keyframes spin {

@@ -11,12 +11,14 @@ navLinks.forEach(link => {
   });
 });
 
-function stopLoader() {
-  // hide the #preloader element and the #preloader:before element after 1.5 seconds
-  setTimeout(function() {
-    document.querySelector('#preloader').classList.add('hide-preloader');
-    document.querySelector('#snake').classList.add('hide-preloader');
-  }, 1500);
-}
+
+
+window.addEventListener("load", function() {
+  var preloader = document.getElementById("preloader");
+  preloader.style.display = "none";
+  var snake = document.getElementByID("snake");
+  snake.style.display = "none";
+  
+});
 
 

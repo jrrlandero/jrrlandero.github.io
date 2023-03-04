@@ -29,5 +29,13 @@ function isElementInView(element) {
 
 window.addEventListener('scroll', animateOnScroll);
 
+window.addEventListener('load', function() {
+  const preloader = document.getElementById('preloader');
+  const snake = document.getElementById('snake');
+
+  preloader.classList.add('hide-preloader');
+  snake.classList.remove('animate-snake');
+});
+
 
 

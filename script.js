@@ -12,9 +12,23 @@ navLinks.forEach(link => {
 });
 
 
-window.addEventListener('load', function() {
-  const preloader = document.querySelector('preloader');
+function stopLoader() {
+  const preloader = document.getElementById('preloader');
+  const snake = document.getElementById('snake');
+  const preloaderBefore = document.querySelector('#preloader:before');
+
   preloader.classList.add('hide-preloader');
+  snake.classList.remove('animate-snake');
+
+  // hide the preloader:before pseudo-element after 2 seconds
+  setTimeout(() => {
+    preloaderBefore.style.display = 'none';
+  }, 2000);
+}
+
+
+window.addEventListener('load', function() {
+  stopLoader();
 });
 
 

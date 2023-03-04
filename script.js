@@ -29,8 +29,5 @@ function isElementInView(element) {
 
 window.addEventListener('scroll', animateOnScroll);
 
-window.addEventListener('load', function() {
-  document.getElementById('loading').style.display = 'none';
-});
 
 

@@ -12,13 +12,12 @@ navLinks.forEach(link => {
 });
 
 
+window.addEventListener('load', function() {
+  const preloader = document.getElementById('preloader');
+  const snake = document.getElementById('snake');
 
-window.addEventListener("load", function() {
-  var preloader = document.getElementById("preloader");
-  preloader.style.display = "none";
-  var snake = document.getElementByID("snake");
-  snake.style.display = "none";
-  
+  preloader.classList.add('hide-preloader');
+  snake.classList.remove('animate-snake');
 });
 
 

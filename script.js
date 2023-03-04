@@ -33,12 +33,17 @@ window.addEventListener('scroll', animateOnScroll);
 function stopLoader() {
   const preloader = document.getElementById('preloader');
   const snake = document.getElementById('snake');
+  const preloaderBefore = document.getElementById('preloader').before;
 
   preloader.classList.add('hide-preloader');
   snake.classList.remove('animate-snake');
-  preloader.style.display = 'none';
-  
+  preloaderBefore.classList.add('hide-preloader');
 }
+
+window.addEventListener("load", function() {
+  setTimeout(stopLoader, 2000);
+});
+
 
 
 

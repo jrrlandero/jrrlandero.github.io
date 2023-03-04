@@ -13,11 +13,9 @@ navLinks.forEach(link => {
 
 
 window.addEventListener('load', function() {
-  const preloader = document.getElementById('preloader');
-  const snake = document.getElementById('snake');
-
+  const preloader = document.querySelector('#preloader');
   preloader.classList.add('hide-preloader');
-  snake.classList.remove('animate-snake');
 });
+
 
 

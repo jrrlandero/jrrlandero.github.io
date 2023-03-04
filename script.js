@@ -11,8 +11,6 @@ navLinks.forEach(link => {
   });
 });
 
-var animateElements = document.querySelectorAll('.animate');
-
 function animateOnScroll() {
   animateElements.forEach((element) => {
     if (isElementInView(element)) {
@@ -27,15 +25,12 @@ function isElementInView(element) {
   return (rect.top <= windowHeight && rect.bottom >= 0);
 }
 
-window.addEventListener('scroll', animateOnScroll);
-
 function stopLoader() {
-  // hide the #preloader element
-  document.querySelector('#preloader').classList.add('hide-preloader');
-  // hide the #snake element
-  document.querySelector('#snake').classList.add('hide-preloader');
-  // stop the snake animation
-  document.querySelector('#snake').style.animation = 'none';
+  // hide the #preloader element and the #preloader:before element after 1.5 seconds
+  setTimeout(function() {
+    document.querySelector('#preloader').classList.add('hide-preloader');
+    document.querySelector('#snake').classList.add('hide-preloader');
+  }, 1500);
 }
 
 

@@ -7,16 +7,19 @@ header {
   background-color: #333;
   color: #fff;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 nav li {
-  display: inline-block;
   margin-right: 20px;
 }
 
@@ -80,7 +83,12 @@ footer {
   }
 }
 
-#preloader.hide-preloader #snake.animate-snake {
+#preloader.hide-preloader {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+#snake.animate-snake {
   animation: none;
-  display: none;
 }

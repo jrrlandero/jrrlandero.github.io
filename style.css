@@ -58,7 +58,6 @@ footer {
   height: 100%;
   background-color: #fff;
   z-index: 9999;
-  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
 
 #preloader:before {
@@ -100,16 +99,14 @@ footer {
   }
 }
 
-.hide-preloader #preloader:before,
-.hide-preloader #snake {
+#preloader.hide-preloader {
   opacity: 0;
   visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
 
-.hide-preloader #preloader {
-  opacity: 0;
-  visibility: hidden;
+#snake.animate-snake {
+  animation: none;
 }
-
 
 

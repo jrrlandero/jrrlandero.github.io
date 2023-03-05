@@ -58,6 +58,7 @@ footer {
   height: 100%;
   background-color: #fff;
   z-index: 9999;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
 
 #preloader:before {
@@ -99,19 +100,14 @@ footer {
   }
 }
 
+#preloader.hide-preloader:before,
+#preloader.hide-preloader #snake {
+  opacity: 0;
+  visibility: hidden;
+}
+
 #preloader.hide-preloader {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-}
-
-#preloader:before.hide-preloader {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-}
-
-#snake.animate-snake {
-  animation: none;
 }
 

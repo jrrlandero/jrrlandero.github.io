@@ -85,5 +85,5 @@ footer {
 }
 
 #snake.animate-snake {
-  display: none;
+  animation: none;
 }

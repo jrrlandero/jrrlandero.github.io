@@ -90,9 +90,7 @@ footer {
   z-index: 10000;
 }
 
-.preloader:before .snake {
-  stroke-dasharray: 50, 80;
-}
+
 
 @keyframes spin {
   0% {

@@ -33,7 +33,5 @@ function stopLoader() {
 
 // Add an event listener to window that triggers the stopLoader function when the page is loaded
 window.addEventListener('load', () => {
-  setTimeout(() => {
     stopLoader();
-  }, 2000);
 });

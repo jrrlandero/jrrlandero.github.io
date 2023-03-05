@@ -18,7 +18,7 @@ function stopLoader() {
   const preloaderBefore = document.querySelector('#preloader:before');
 
   preloader.classList.add('hide-preloader');
-  snake.classList.remove('animate-snake');
+  snake.classList.add('animate-snake'); // add this line
 
   // hide the preloader:before pseudo-element after 2 seconds
   setTimeout(() => {

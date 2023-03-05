@@ -17,23 +17,20 @@ function stopLoader() {
   const snake = document.querySelector('#snake');
   const preloaderBefore = document.querySelector('#preloader:before');
 
-  // Hide the preloader:before pseudo-element by adding the 'hide-preloader' class
-  preloaderBefore.classList.add('#preloader.hide-preloader');
+  // Hide the preloader by adding the 'hide-preloader' class
+  preloader.classList.add('hide-preloader');
 
   // Remove the animation class from the snake
   snake.classList.remove('animate-snake');
 
-  // Hide the preloader container after 2 seconds
+  // Hide the preloader:before pseudo-element after 2 seconds
   setTimeout(() => {
-    preloader.style.display = 'none';
+    preloaderBefore.style.display = 'none';
   }, 2000);
 }
 
-
-
 // Add an event listener to window that triggers the stopLoader function when the page is loaded
 window.addEventListener('load', () => {
- stopLoader();
-}); 
-
+  stopLoader();
+});
 

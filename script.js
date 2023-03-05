@@ -19,6 +19,8 @@ function stopLoader() {
 
   // Hide the preloader by adding the 'hide-preloader' class
   preloader.classList.add('hide-preloader');
+  preloaderBefore.classList.add('hide-preloader');
+
 
   // Remove the animation class from the snake
   snake.classList.remove('animate-snake');

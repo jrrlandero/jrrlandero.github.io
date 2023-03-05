@@ -58,20 +58,7 @@ footer {
   height: 100%;
   background-color: #fff;
   z-index: 9999;
-}
-
-#snake {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 5px solid #000;
-  border-top-color: transparent;
-  animation: spin 2s linear infinite;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -25px;
-  margin-left: -25px;
+  display: none; /* add this line */
 }
 
 #preloader:before {
@@ -88,7 +75,23 @@ footer {
   border-right-color: transparent;
   animation: spin 4s linear infinite;
   z-index: 10000;
+  display: none; /* add this line */
 }
+
+#preloader.hide-preloader {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  display: none; /* add this line */
+}
+
+#preloader:before.hide-preloader {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  display: none; /* add this line */
+}
+
 
 @keyframes spin {
   0% {
@@ -98,19 +101,6 @@ footer {
     transform: rotate(360deg);
   }
 }
-
-#preloader:before.hide-preloader {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-}
-
-#preloader.hide-preloader {
-  display: none;
-  transition: display 0.5s ease-out;
-}
-
-
 
 #snake.animate-snake {
   animation: none;

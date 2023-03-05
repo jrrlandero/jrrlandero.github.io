@@ -13,29 +13,27 @@ navLinks.forEach(link => {
 
 // Function to stop the preloader
 function stopLoader() {
-  console.log('stopLoader() called');
   const preloader = document.querySelector('#preloader');
   const snake = document.querySelector('#snake');
+  const preloaderBefore = document.querySelector('#preloader:before');
 
-  preloader.classList.add('hide-preloader'); // add hide-preloader class to preloader element
-  console.log('hide-preloader class added');
+  // Hide the preloader by adding the 'hide-preloader' class
+  preloader.classList.add('hide-preloader');
 
   // Remove the animation class from the snake
-  snake.style.animation = 'none';
-  console.log('animation removed from snake');
+  snake.classList.remove('animate-snake');
 
-  // Hide the preloader after 2 seconds
+  // Hide the preloader:before pseudo-element after 2 seconds
   setTimeout(() => {
-    preloader.style.display = 'none';
-    console.log('preloader hidden');
+    preloaderBefore.style.display = 'none';
   }, 2000);
 }
-
 
 // Add an event listener to window that triggers the stopLoader function when the page is loaded
 window.addEventListener('load', () => {
   stopLoader();
 });
+
 
 
 

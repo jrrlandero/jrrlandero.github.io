@@ -18,7 +18,7 @@ function stopLoader() {
   const preloaderBefore = document.querySelector('#preloader:before');
 
   // Hide the preloader:before pseudo-element by adding the 'hide-preloader' class
-  preloaderBefore.classList.add('hide-preloader');
+  preloaderBefore.classList.add('#preloader.hide-preloader');
 
   // Remove the animation class from the snake
   snake.classList.remove('animate-snake');

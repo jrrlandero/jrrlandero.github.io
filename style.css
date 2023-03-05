@@ -87,15 +87,20 @@ footer {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-  display: none; /* add this line */
 }
 
-#preloader:before.hide-preloader {
+#preloader.hide-preloader #snake {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-  display: none; /* add this line */
 }
+
+#preloader.hide-preloader:before {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
 
 
 #snake.animate-snake {

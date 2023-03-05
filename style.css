@@ -28,15 +28,6 @@ nav a {
   text-decoration: none;
 }
 
-.nav__menu {
-  display: none;
-}
-
-.nav__menu--active {
-  display: block;
-}
-
-
 main {
   margin: 20px;
 }

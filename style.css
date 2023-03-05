@@ -80,10 +80,7 @@ footer {
   }
 }
 
-#preloader.hide-preloader #snake {
+#preloader.hide-preloader #snake.animate-snake {
   animation: none;
-}
-
-#preloader.hide-preloader:before {
   display: none;
 }

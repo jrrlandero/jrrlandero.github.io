@@ -60,6 +60,22 @@ footer {
   z-index: 9999;
 }
 
+#preloader:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  border-radius: 50%;
+  border: 5px solid #000;
+  border-right-color: transparent;
+  animation: spin 4s linear infinite;
+  z-index: 10000;
+}
+
 #snake {
   width: 50px;
   height: 50px;
@@ -89,20 +105,13 @@ footer {
   transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
 
-#preloader.hide-preloader #snake {
+#preloader:before.hide-preloader {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
-
-#preloader.hide-preloader:before {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-}
-
-
 
 #snake.animate-snake {
   animation: none;
 }
+

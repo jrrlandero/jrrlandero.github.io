@@ -25,6 +25,7 @@ function stopLoader() {
   // Hide the preloader:before pseudo-element after 2 seconds
   setTimeout(() => {
     preloader.style.display = 'none';
+    preloaderBefore.style.display = 'none';
   }, 2000);
 }
 

@@ -58,40 +58,21 @@ footer {
   height: 100%;
   background-color: #fff;
   z-index: 9999;
-  display: none; /* add this line */
 }
 
-#preloader:before {
-  content: "";
+#snake {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #000;
+  border-top-color: transparent;
+  animation: spin 2s linear infinite;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100px;
-  height: 100px;
-  margin-top: -50px;
-  margin-left: -50px;
-  border-radius: 50%;
-  border: 5px solid #000;
-  border-right-color: transparent;
-  animation: spin 4s linear infinite;
-  z-index: 10000;
-  display: none; /* add this line */
+  margin-top: -25px;
+  margin-left: -25px;
 }
-
-#preloader.hide-preloader {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-  display: none; /* add this line */
-}
-
-#preloader:before.hide-preloader {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-  display: none; /* add this line */
-}
-
 
 @keyframes spin {
   0% {
@@ -100,6 +81,12 @@ footer {
   100% {
     transform: rotate(360deg);
   }
+}
+
+#preloader.hide-preloader {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
 
 #snake.animate-snake {

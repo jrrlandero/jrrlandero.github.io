@@ -105,7 +105,7 @@ footer {
   transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
 
-#preloader.hide-preloader:before{
+#preloader:before.hide-preloader{
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease-out, visibility 0.5s ease-out;

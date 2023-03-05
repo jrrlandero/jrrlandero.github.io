@@ -18,6 +18,8 @@ function stopLoader() {
 
   preloader.classList.add('hide-preloader');
   preloader.classList.remove('animate-snake');
+  snake.style.animation = 'none';
+
 
   // hide the preloader:before pseudo-element after 2 seconds
   setTimeout(() => {

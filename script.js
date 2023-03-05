@@ -26,11 +26,11 @@ function stopLoader() {
   // Hide the preloader:before pseudo-element after 2 seconds
   setTimeout(() => {
     preloaderBefore.style.display = 'none';
-  }, 10000);
+  }, 2000);
 }
 
 // Add an event listener to window that triggers the stopLoader function when the page is loaded
-/*window.addEventListener('load', () => {
+window.addEventListener('load', () => {
   stopLoader();
-}); */ 
+}); 
 

@@ -10,17 +10,21 @@ navLinks.forEach(link => {
     document.body.classList.remove('nav-open');
   });
 });
+
 // Function to stop the preloader
 function stopLoader() {
   const preloader = document.querySelector('#preloader');
+  const snake = document.querySelector('#snake');
   const preloaderBefore = document.querySelector('#preloader:before');
 
-  preloaderBefore.classList.add('hide-preloader'); // add hide-preloader class to preloader:before element
+  preloader.classList.add('hide-preloader'); // add hide-preloader class to preloader element
+
+  // Remove the animation class from the snake
+  snake.style.animation = 'none';
 
   // Hide the preloader:before pseudo-element after 2 seconds
   setTimeout(() => {
     preloader.style.display = 'none';
-    preloaderBefore.style.display = 'none';
   }, 2000);
 }
 
@@ -28,3 +32,4 @@ function stopLoader() {
 window.addEventListener('load', () => {
   stopLoader();
 });
+

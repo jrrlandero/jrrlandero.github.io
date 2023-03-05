@@ -15,16 +15,15 @@ navLinks.forEach(link => {
 function stopLoader() {
   const preloader = document.querySelector('#preloader');
   const snake = document.querySelector('#snake');
-  const preloaderBefore = document.querySelector('#preloader:before');
 
-  preloaderBefore.classList.add('hide-preloader'); // add hide-preloader class to preloader element
+  preloader.classList.add('hide-preloader'); // add hide-preloader class to preloader element
 
   // Remove the animation class from the snake
   snake.style.animation = 'none';
 
-  // Hide the preloader:before pseudo-element after 2 seconds
+  // Hide the preloader after 2 seconds
   setTimeout(() => {
-    preloaderBefore.style.display = 'none';
+    preloader.style.display = 'none';
   }, 2000);
 }
 
@@ -32,4 +31,6 @@ function stopLoader() {
 window.addEventListener('load', () => {
   stopLoader();
 });
+
+
 

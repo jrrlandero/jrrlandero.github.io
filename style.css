@@ -80,10 +80,10 @@ footer {
   }
 }
 
-#preloader.hide-preloader {
-  display: none;
+#preloader.hide-preloader #snake {
+  animation: none;
 }
 
-#snake.animate-snake {
-  animation: none;
+#preloader.hide-preloader:before {
+  display: none;
 }

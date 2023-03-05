@@ -11,27 +11,22 @@ navLinks.forEach(link => {
   });
 });
 
-
 function stopLoader() {
   const preloader = document.getElementById('preloader');
-  const preloaderBefore = document.querySelector('#preloader:before');
+  const snake = document.getElementById('snake');
 
-  preloader.classList.add('hide-preloader');
-  preloader.classList.remove('animate-snake');
-  snake.style.animation = 'none';
+  // remove the hide-preloader and animate-snake classes
+  preloader.classList.remove('hide-preloader');
+  snake.classList.add('animate-snake');
 
-
-  // hide the preloader:before pseudo-element after 2 seconds
+  // hide the preloader after 2 seconds
   setTimeout(() => {
-    preloaderBefore.style.display = 'none';
+    preloader.style.display = 'none';
   }, 2000);
 }
-
-
 
 window.addEventListener('load', function() {
   stopLoader();
 });
-
 
 

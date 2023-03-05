@@ -11,21 +11,26 @@ navLinks.forEach(link => {
   });
 });
 
+// Function to stop the preloader
 function stopLoader() {
-  const preloader = document.getElementById('preloader');
-  const snake = document.getElementById('snake');
+  const preloader = document.querySelector('#preloader');
+  const snake = document.querySelector('#snake');
+  const preloaderBefore = document.querySelector('#preloader:before');
 
+  // Hide the preloader by adding the 'hide-preloader' class
   preloader.classList.add('hide-preloader');
+
+  // Remove the animation class from the snake
   snake.classList.remove('animate-snake');
 
-  // hide the preloader after 2 seconds
+  // Hide the preloader:before pseudo-element after 2 seconds
   setTimeout(() => {
-    preloader.style.display = 'none';
+    preloaderBefore.style.display = 'none';
   }, 2000);
 }
 
-window.addEventListener('load', function() {
+// Add an event listener to window that triggers the stopLoader function when the page is loaded
+window.addEventListener('load', () => {
   stopLoader();
 });
-
 

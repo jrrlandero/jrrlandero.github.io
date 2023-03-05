@@ -17,14 +17,14 @@ function stopLoader() {
   const snake = document.querySelector('#snake');
   const preloaderBefore = document.querySelector('#preloader:before');
 
-  preloader.classList.add('hide-preloader'); // add hide-preloader class to preloader element
+  preloaderBefore.classList.add('hide-preloader'); // add hide-preloader class to preloader element
 
   // Remove the animation class from the snake
   snake.style.animation = 'none';
 
   // Hide the preloader:before pseudo-element after 2 seconds
   setTimeout(() => {
-    preloader.style.display = 'none';
+    preloaderBefore.style.display = 'none';
   }, 2000);
 }
 

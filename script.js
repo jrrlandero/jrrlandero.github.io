@@ -15,9 +15,8 @@ function stopLoader() {
   const preloader = document.getElementById('preloader');
   const snake = document.getElementById('snake');
 
-  // remove the hide-preloader and animate-snake classes
-  preloader.classList.remove('hide-preloader');
-  snake.classList.add('animate-snake');
+  preloader.classList.add('hide-preloader');
+  snake.classList.remove('animate-snake');
 
   // hide the preloader after 2 seconds
   setTimeout(() => {

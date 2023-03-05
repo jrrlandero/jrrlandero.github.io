@@ -19,8 +19,7 @@ function stopLoader() {
 
   // Hide the preloader by adding the 'hide-preloader' class
   preloader.classList.add('hide-preloader');
-  preloaderBefore.classList.add('hide-preloader');
-
+  preloaderBefore.classList.add('hide-preloader'); // add hide-preloader class to preloader:before element
 
   // Remove the animation class from the snake
   snake.classList.remove('animate-snake');
@@ -30,6 +29,7 @@ function stopLoader() {
     preloaderBefore.style.display = 'none';
   }, 2000);
 }
+
 
 // Add an event listener to window that triggers the stopLoader function when the page is loaded
 window.addEventListener('load', () => {

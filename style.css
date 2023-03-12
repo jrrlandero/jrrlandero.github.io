@@ -56,6 +56,7 @@ footer {
   height: 200px;
   background-color: lightgray;
   margin: 20px;
+  border: 10px solid #333;
 }
 
 .container2 {

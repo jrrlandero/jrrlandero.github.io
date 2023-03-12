@@ -66,6 +66,7 @@ footer {
   background-color: lightgray;
   border-radius: 25px;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .container2 {

@@ -65,6 +65,7 @@ footer {
   height: 400px;
   background-color: lightgray;
   border-radius: 25px;
+  overflow: hidden;
 }
 
 .container2 {

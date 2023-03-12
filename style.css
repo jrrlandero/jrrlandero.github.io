@@ -81,7 +81,7 @@ footer {
 .block2 img {
  max-width: 100%;
  height: auto;
- border: 2px solid #333;
+ border: 3px solid #333;
  border-radius: 25px;
  object-fit: cover;
  overflow: hidden;

@@ -34,6 +34,3 @@ window.addEventListener('load', () => {
   stopLoader();
 });
 
-
-
-

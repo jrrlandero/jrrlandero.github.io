@@ -46,25 +46,6 @@ header {
   padding: 20px;
 }
 
-.nav-list {
-  display: flex;
-  list-style: none;
-}
-
-.nav-item {
-  margin-right: 20px;
-}
-
-.nav-link {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.2s ease-out;
-}
-
-.nav-link:hover {
-  color: #f0f0f0;
-}
-
 main {
   margin: 20px 0;
 }

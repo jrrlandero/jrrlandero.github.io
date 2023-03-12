@@ -46,18 +46,6 @@ header {
   padding: 20px;
 }
 
-.nav-open .nav-toggle span {
-  transform: rotate(45deg);
-}
-
-.nav-open .nav-toggle:before {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.nav-open .nav-toggle:after {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
 .nav-list {
   display: flex;
   list-style: none;

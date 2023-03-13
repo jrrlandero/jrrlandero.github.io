@@ -52,8 +52,8 @@ footer {
 
 .block {
   display: inline-block;
-  width: 250px;
-  height: 250px;
+  width: 240px;
+  height: 240px;
   background-color: lightgray;
   margin: 20px;
   border-radius: 25px;
@@ -91,7 +91,7 @@ footer {
 
 
 .block:hover {
-  transform: scale(1.20); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.10); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .block:onclick {

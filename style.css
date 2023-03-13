@@ -94,11 +94,6 @@ footer {
   transform: scale(1.10); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.block:onclick {
-  transform: scale(.90); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-
 #preloader {
   position: fixed;
   top: 0;

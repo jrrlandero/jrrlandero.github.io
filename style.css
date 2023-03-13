@@ -57,8 +57,6 @@ footer {
   background-color: lightgray;
   margin: 20px;
   border-radius: 25px;
-  position: relative;
-
 }
 
 .block2 {
@@ -87,6 +85,11 @@ footer {
  border-radius: 25px;
  object-fit: cover;
  overflow: hidden;
+}
+
+.block p {
+ position: relative;
+
 }
 
 #preloader {

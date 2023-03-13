@@ -57,6 +57,7 @@ footer {
   background-color: lightgray;
   margin: 20px;
   border-radius: 25px;
+  vertical-align: text-top;
 }
 
 .block2 {
@@ -87,10 +88,6 @@ footer {
  overflow: hidden;
 }
 
-.block p {
- position: relative;
-
-}
 
 #preloader {
   position: fixed;

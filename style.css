@@ -54,7 +54,7 @@ footer {
   display: inline-block;
   width: 250px;
   height: 250px;
-  background-color: lightgray;
+  background-color: transparent;
   margin: 20px;
   border-radius: 25px;
   vertical-align: text-top;

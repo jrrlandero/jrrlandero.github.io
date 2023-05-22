@@ -30,7 +30,7 @@ nav a {
 
 ul2 {
   list-style: none;
-  display: inline-block;
+  display: inline-flex;
 }
 
 main {

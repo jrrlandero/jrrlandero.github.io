@@ -101,7 +101,7 @@ footer {
 
 .block5 {
   display: inline-block;
-  width: 40%;
+  width: 800px;
   height: auto;
   background-color: transparent;
   border-radius: 25px;
@@ -141,7 +141,7 @@ footer {
 }
 
 .block5 img {
- max-width: 40%;
+ max-width: 100%;
  height: auto;
  border-radius: 25px;
  object-fit: cover;

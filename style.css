@@ -28,6 +28,11 @@ nav a {
   text-decoration: none;
 }
 
+ul2 {
+  list-style: none;
+  display: flex;
+}
+
 main {
   margin: 20px;
 }

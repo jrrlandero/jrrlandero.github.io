@@ -31,6 +31,12 @@ nav a {
 ul2 {
   list-style: none;
   display: inline-flex;
+  
+}
+
+.horizontal{
+  text-underline-position: under;
+
 }
 
 main {
